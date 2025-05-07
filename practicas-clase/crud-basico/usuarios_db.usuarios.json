@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "681b7caf289e8f1573f118f8"
+  },
+  "user_name": "Carlos Francisco Benitez Quintanilla",
+  "email": "carlos@gmail.com",
+  "tel": "7777-7777",
+  "address": "Reubicaciones 1, frente a cancha",
+  "createdAt": "2025-04-03",
+  "updatedAt": {
+    "$date": "2025-05-07T15:31:20.201Z"
+  }
+}]
