@@ -10,6 +10,9 @@ using Unab.Practice.Employees.Dto.Dtos;
 using Unab.Practice.Employees.UseCases.Employees.Queries.GetNextCorrelativeEmployeeQuery;
 using Unab.Practice.Employees.UseCases.Employees.Queries.GetByIdEmployeeQuery;
 using Unab.Practice.Employees.UseCases.Employees.Queries.GetAllEmployeeQuery;
+using Unab.Practice.Employees.UseCases.Employees.Queries.GetByDuiEmployeeQuery;
+using Unab.Practice.Employees.UseCases.Employees.Queries.GetByCodeEmployeeQuery;
+using Unab.Practice.Employees.UseCases.Employees.Queries.GetByFullnameEmployeeQuery;
 
 namespace Unab.Practice.Employee.WebApi.Controllers
 {
@@ -100,12 +103,51 @@ namespace Unab.Practice.Employee.WebApi.Controllers
             return Ok(response);
         }
 
+        [HttpGet("get-by-code/{code}")]
+        [ProducesResponseType(typeof(Response<EmployeeDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Response<EmployeeDto?>), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetByCodeAsync([FromRoute] string code, CancellationToken cancellationToken)
+        {
+            var response = await _mediator.Send(new GetByCodeEmployeeQuery { Code = code }, cancellationToken);
+            if (!response.IsSuccess)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
+
+        [HttpGet("get-by-dui/{dui}")]
+        [ProducesResponseType(typeof(Response<EmployeeDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Response<EmployeeDto?>), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetByDuiync([FromRoute] string dui, CancellationToken cancellationToken)
+        {
+            var response = await _mediator.Send(new GetByDuiEmployeeQuery { Dui = dui }, cancellationToken);
+            if (!response.IsSuccess)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
+
         [HttpGet("get-all")]
         [ProducesResponseType(typeof(Response<IEnumerable<EmployeeDto>>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(Response<IEnumerable<EmployeeDto>?>), StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken)
         {
             var response = await _mediator.Send(new GetAllEmployeeQuery(), cancellationToken);
+            if (!response.IsSuccess)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response);
+        }
+
+        [HttpGet("find-by-name-or-lastname")]
+        [ProducesResponseType(typeof(Response<IEnumerable<EmployeeDto>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(Response<IEnumerable<EmployeeDto>?>), StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetByFullnameAsync([FromQuery] string nameOrLastname, CancellationToken cancellationToken)
+        {
+            var response = await _mediator.Send(new GetByFullnameEmployeeQuery { Fullname = nameOrLastname }, cancellationToken);
             if (!response.IsSuccess)
             {
                 return BadRequest(response);

@@ -71,6 +71,41 @@
   },
   {
     "ContainingType": "Unab.Practice.Employee.WebApi.Controllers.EmployeeController",
+    "Method": "GetByFullnameAsync",
+    "RelativePath": "api/employee/find-by-fullname",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fullname",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[System.Collections.Generic.IEnumerable\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[System.Collections.Generic.IEnumerable\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Unab.Practice.Employee.WebApi.Controllers.EmployeeController",
     "Method": "GetAllAsync",
     "RelativePath": "api/employee/get-all",
     "HttpMethod": "GET",
@@ -89,6 +124,76 @@
       },
       {
         "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[System.Collections.Generic.IEnumerable\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Unab.Practice.Employee.WebApi.Controllers.EmployeeController",
+    "Method": "GetByCodeAsync",
+    "RelativePath": "api/employee/get-by-code/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Unab.Practice.Employee.WebApi.Controllers.EmployeeController",
+    "Method": "GetByDuiync",
+    "RelativePath": "api/employee/get-by-dui/{dui}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dui",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Unab.Practice.Employees.Transversal.Response\u00601[[Unab.Practice.Employees.Dto.Dtos.EmployeeDto, Unab.Practice.Employee.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

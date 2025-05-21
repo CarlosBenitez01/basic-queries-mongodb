@@ -52,12 +52,12 @@ namespace Unab.Practice.Employees.Persistence.Repositories
             //conectado a base de datos
             var collection = _database.GetCollection<Employee>("Employees");
             var secureFullname = Regex.Escape(fullname);
-            var filterName = Builders<Employee>.Filter
+            var filter = Builders<Employee>.Filter
                 .Regex(x => x.FirstName, new BsonRegularExpression(secureFullname, "i"));
-            var filterLastName = Builders<Employee>.Filter
+            filter |= Builders<Employee>.Filter
                 .Regex(x => x.LastName, new BsonRegularExpression(secureFullname, "i"));
-
-            var filter = Builders<Employee>.Filter.Or(filterName, filterLastName);
+            filter &= Builders<Employee>.Filter
+                .Eq(x => x.IsDeleted, false);
 
             var employee = await collection.Find(filter).ToListAsync(cancellation);
             return employee;
@@ -73,21 +73,28 @@ namespace Unab.Practice.Employees.Persistence.Repositories
             return await employees.ToListAsync(cancellation);
         }
 
-        public async Task<IEnumerable<Employee>> GetByCodeAsync(string code, CancellationToken cancellation)
+        public async Task<Employee> GetByCodeAsync(string code, CancellationToken cancellation)
         {
-            //conectado a base de datos
             var collection = _database.GetCollection<Employee>("Employees");
-            var secureCode = Regex.Escape(code);
-            var filterCode = Builders<Employee>.Filter
-                .Regex(x => x.FirstName, new BsonRegularExpression(secureCode, "i"));
+            var filter = Builders<Employee>.Filter
+                .Eq(x => x.Code, code);
+            filter &= Builders<Employee>.Filter
+                .Eq(x => x.IsDeleted, false);
 
-            var employee = await collection.Find(filterCode).ToListAsync(cancellation);
+            var employee = await collection.Find(filter).FirstOrDefaultAsync(cancellation);
             return employee;
         }
 
-        public Task<Employee> GetByDuiAsync(string code, CancellationToken cancellation)
+        public async Task<Employee> GetByDuiAsync(string dui, CancellationToken cancellation)
         {
-            throw new NotImplementedException();
+            var collection = _database.GetCollection<Employee>("Employees");
+            var filter = Builders<Employee>.Filter
+                .Eq(x => x.Dui, dui);
+            filter &= Builders<Employee>.Filter
+                .Eq(x => x.IsDeleted, false);
+
+            var employee = await collection.Find(filter).FirstOrDefaultAsync(cancellation);
+            return employee;
         }
 
         public async Task<Employee> GetByIdAsync(ObjectId id, CancellationToken cancellation)
