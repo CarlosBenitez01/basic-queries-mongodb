@@ -1,0 +1,16 @@
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\bin\Debug\net8.0\Unab.Practice.Employee.Interfaces.deps.json
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\bin\Debug\net8.0\Unab.Practice.Employee.Interfaces.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\bin\Debug\net8.0\Unab.Practice.Employee.Interfaces.pdb
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\bin\Debug\net8.0\Unab.Practice.Employee.Domain.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\bin\Debug\net8.0\Unab.Practice.Employee.Domain.pdb
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.csproj.AssemblyReference.cache
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.AssemblyInfoInputs.cache
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.AssemblyInfo.cs
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.sourcelink.json
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Pra.9FC37C4B.Up2Date
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\refint\Unab.Practice.Employee.Interfaces.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\Unab.Practice.Employee.Interfaces.pdb
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Interfaces\obj\Debug\net8.0\ref\Unab.Practice.Employee.Interfaces.dll

@@ -1,0 +1,6 @@
+@Unab.Practice.Employee.WebApi_HostAddress = http://localhost:5291
+
+GET {{Unab.Practice.Employee.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

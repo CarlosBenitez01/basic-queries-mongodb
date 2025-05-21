@@ -1,0 +1,13 @@
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\bin\Debug\net8.0\Unab.Practice.Employee.Domain.deps.json
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\bin\Debug\net8.0\Unab.Practice.Employee.Domain.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\bin\Debug\net8.0\Unab.Practice.Employee.Domain.pdb
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.csproj.AssemblyReference.cache
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.AssemblyInfoInputs.cache
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.AssemblyInfo.cs
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.csproj.CoreCompileInputs.cache
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.sourcelink.json
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\refint\Unab.Practice.Employee.Domain.dll
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\Unab.Practice.Employee.Domain.pdb
+C:\Users\willy\Documents\basic-queries-mongodb\Api\Unab.Practice.Employee\Unab.Practice.Employee.Domain\obj\Debug\net8.0\ref\Unab.Practice.Employee.Domain.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Unab.Practice.Employee.WebApi.props" />
+</Project>
