@@ -72,13 +72,13 @@
   {
     "ContainingType": "Unab.Practice.Employee.WebApi.Controllers.EmployeeController",
     "Method": "GetByFullnameAsync",
-    "RelativePath": "api/employee/find-by-fullname",
+    "RelativePath": "api/employee/find-by-name-or-lastname",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fullname",
+        "Name": "nameOrLastname",
         "Type": "System.String",
         "IsRequired": false
       }

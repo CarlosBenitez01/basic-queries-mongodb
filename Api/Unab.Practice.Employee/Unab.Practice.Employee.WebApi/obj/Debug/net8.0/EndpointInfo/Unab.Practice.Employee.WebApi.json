@@ -485,14 +485,14 @@
         }
       }
     },
-    "/api/employee/find-by-fullname": {
+    "/api/employee/find-by-name-or-lastname": {
       "get": {
         "tags": [
           "Employee"
         ],
         "parameters": [
           {
-            "name": "fullname",
+            "name": "nameOrLastname",
             "in": "query",
             "schema": {
               "type": "string"
@@ -783,11 +783,10 @@
       },
       "SexDto": {
         "enum": [
-          1,
-          2
+          "MAN",
+          "WOMAN"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "StringResponse": {
         "type": "object",
